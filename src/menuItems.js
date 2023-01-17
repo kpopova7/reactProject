@@ -9,7 +9,6 @@ export const menuItems = [
     },
     {
       title: 'About',
-      url: '/about',
       submenu: [
         {
           title: 'a List',
