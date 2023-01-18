@@ -4,19 +4,19 @@ export const menuItems = [
       url: '/',
     },
     {
-      title: 'Services',
-      url: '/services',
+      title: 'Random Page',
+      url: '/random-page',
     },
     {
-      title: 'About',
+      title: 'Other',
       submenu: [
         {
-          title: 'a List',
+          title: 'THE List',
           url: 'a-list',
         },
         {
-          title: 'Our values',
-          url: 'our-values',
+          title: 'Random',
+          url: 'another-random-page',
         },
       ],
     },

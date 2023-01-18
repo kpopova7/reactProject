@@ -1,5 +1,5 @@
 import { menuItems } from '../../menuItems';
-import MenuItems from '../menuItems/menuItems';
+import MenuItems from './menuItems/menuItems';
 
 const Navbar = () => {
     return (

@@ -1,7 +1,7 @@
-import MenuItems from '../menuItems/menuItems';
+import MenuItems from '../navbar/menuItems/menuItems';
 const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   depthLevel = depthLevel + 1;
-  const dropdownClass = depthLevel > 1 ? 'dropdown-submenu' : '';
+
   return (
     <ul
       className={`dropdown${

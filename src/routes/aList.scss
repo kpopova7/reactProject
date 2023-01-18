@@ -1,7 +1,8 @@
 .container {
-    padding-top: 30px;
-    width: 300px;
-    margin: auto;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 3rem 20px;
+	padding-bottom: 4rem; 
   }
   
   .input {
@@ -11,6 +12,44 @@
   
   .user-list {
     margin-top: 30px;
+	.modal-link {
+		cursor: pointer;
+	}
+
+	.btn-delete {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		border: 2px solid rgb(231, 50, 50);
+		background-color: #fff;
+		cursor: pointer;
+		box-shadow: 0 0 10px #333;
+		overflow: hidden;
+		transition: .3s;
+	}
+
+	.btn-delete:hover {
+		background-color: rgb(245, 207, 207);
+		transform: scale(1.2);
+		box-shadow: 0 0 4px #111;
+		transition: .3s;
+	}
+
+	svg {
+		color: rgb(231, 50, 50);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: .3s;
+	}
+
+	.btn-delete:focus svg {
+		opacity: 0;
+		transition: .3s;
+	}
+
   }
   
   .user {
@@ -26,14 +65,6 @@
     color: blue;
   }
 
-
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600");
-
-body {
-	background: #f4f6fc;
-	color: #2e384d;
-	font-family: "Open Sans", Arial, sans-serif;
-}
 
 main {
 	background: #fff;
@@ -52,7 +83,6 @@ code {
 	background: #f4f6fc;
 	border-radius: 5px;
 	color: #2d4284;
-	font-family: monospace;
 	padding: 4px 8px;
 }
 
@@ -121,17 +151,17 @@ h1 {
 	margin-bottom: 25px;
 }
 
-a {
-	border-radius: 5px;
-	color: #682ede;
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
+// a {
+// 	border-radius: 5px;
+// 	// color: #682ede;
+// 	font-weight: 600;
+// 	padding: 2px 4px;
+// 	margin-left: -2px;
+// 	margin-right: -2px;
 	
-	&:hover {
-		background: #8c54ff;
-		color: #fff;
-		text-decoration: none;
-	}
-}
+// 	&:hover {
+// 		// background: #8c54ff;
+// 		color: #fff;
+// 		text-decoration: none;
+// 	}
+// }
