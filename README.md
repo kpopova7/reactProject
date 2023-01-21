@@ -1,8 +1,9 @@
 Setup:
+1. Clone the repository (git clone https://github.com/kpopova7/reactProject.git)
+2. cd reactProject/
+3. npm install
+4. npm start
 
-1. Clone the repository
-2. Run npm install
-3. Run npm start
 
 Features:
 
