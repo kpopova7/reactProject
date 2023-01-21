@@ -1,0 +1,52 @@
+@import '../../colors.scss';
+
+.modal__backdrop {
+    background: rgba(0, 0, 0, .1);
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    .modal__container {
+        background: $white;
+        border-radius: 5px;
+        max-width: 100%;
+        margin: 250px auto;
+        padding: 15px;
+        width: 560px;
+
+        .modal__title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        button {
+            float: right;
+            margin-top: -50px;
+            background: $blue-90;
+            border: 0;
+            border-radius: 5px;
+            color: $white;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding: 10px 15px;
+            transition: transform 100ms ease-out;
+
+            &:hover {
+                background: $blue-90;
+                transform: scale(1.1);
+            }
+        }
+
+        .small-text {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}

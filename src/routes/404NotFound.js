@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom';
-
 const NotFound = () => {
   return (
     <>
-      <h2>404 NOT FOUND</h2>
+      <hi>404 not found</hi>
+      <h2>PAGE NOT VALID, PLEASE CHECK THE URL!</h2>
     </>
   );
 };

@@ -1,57 +1,60 @@
+@import '../../colors.scss';
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   column-gap: 30px;
 
   ul, li {
-  padding: 0;
-  list-style-type: none;
-}
-nav {
-    padding: 30px;
-    border-right: 1px solid #ddd;
-  }
-  
-  nav li {
-    text-decoration: underline;
-  }
-  
-  article {
-    padding: 30px;
-  }
-  
-  article h2 {
-    font-size: 3.5em;
-    max-width: 800px;
-  }
-  
-  article img {
-    width: 100%;
-  }
-  
-  article p {
-    margin-top: 30px;
-    line-height: 2em;
-    color: #777;
-  }
-  
-  aside {
-    padding: 30px;
-    border-left: 1px solid #ddd;
+    padding: 0;
+    list-style-type: none;
   }
 
-  
+  nav {
+    padding: 30px;
+    border-right: 1px solid $white;
+
+    li {
+      text-decoration: underline;
+    }
+  }
+
+  article {
+    padding: 30px;
+
+    h2 {
+      font-size: 3.5em;
+      max-width: 800px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    p {
+      margin-top: 30px;
+      line-height: 2em;
+      color: $blue-90;
+    }
+  }
+
+  aside {
+    padding: 30px;
+    border-left: 1px solid $white;
+  }
+
+
   /* Responsive */
   @media screen and (max-width: 1200px) {
     nav {
       grid-column: span 3;
       border-right: 0;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    nav li {
-      display: inline-block;
-      margin-right: 10px;
+      border-bottom: 1px solid $white;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
     }
   
     article {
@@ -62,7 +65,7 @@ nav {
       padding: 16px;
     }
   }
-  
+
   @media screen and (max-width: 980px) {
     nav,
     article,
@@ -72,13 +75,12 @@ nav {
   
     aside {
       border-left: 0;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid $white;
     }
   
     article h2 {
       font-size: 2.5em;
     }
   }
-  
 }
 

@@ -1,10 +1,9 @@
-// import { Link } from 'react-router-dom';
-import './randomPage.scss';
+import './RandomPage.scss';
 
 const RandomPage = () => {
   return (
     <div>
-      <div class="grid-container">
+      <div className="grid-container">
       <nav>
         <p>Categories</p>
         <li>Film & Cinema</li>

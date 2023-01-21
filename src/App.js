@@ -1,11 +1,11 @@
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
-import Home from './routes/home';
-import RandomPage from './routes/randomPage';
-import AList from './routes/aList';
+import Home from './routes/Home/Home';
+import RandomPage from './routes/RandomPage/RandomPage';
+import List from './routes/List/List';
 import NotFound from './routes/404NotFound';
-import Layout from './layout';
-import AnotherRandom from './routes/anotherRandom';
+import Layout from './Layout';
+import AnotherRandom from './routes/AnotherRandom/AnotherRandom';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="random-page" element={<RandomPage />} />
-          <Route path="a-list" element={<AList />} />
+          <Route path="a-list" element={<List />} />
           <Route path="another-random-page" element={<AnotherRandom />} />
           <Route path="*" element={<NotFound />} />
         </Route>

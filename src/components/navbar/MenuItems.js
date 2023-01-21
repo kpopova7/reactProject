@@ -1,31 +1,10 @@
-import { useState, useEffect, useRef } from 'react';
-import Dropdown from '../../dropdown/dropdown';
+import { useState } from 'react';
+import Dropdown from '../Dropdown/Dropdown';
 
 import { Link } from 'react-router-dom';
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
-
-  let ref = useRef();
-
-  useEffect(() => {
-    const handler = (event) => {
-      if (
-        dropdown &&
-        ref.current &&
-        !ref.current.contains(event.target)
-      ) {
-        setDropdown(false);
-      }
-    };
-    document.addEventListener('mousedown', handler);
-    document.addEventListener('touchstart', handler);
-    return () => {
-      // Cleanup the event listener
-      document.removeEventListener('mousedown', handler);
-      document.removeEventListener('touchstart', handler);
-    };
-  }, [dropdown]);
 
   const onMouseEnter = () => {
     window.innerWidth > 960 && setDropdown(true);
@@ -42,7 +21,6 @@ const MenuItems = ({ items, depthLevel }) => {
   return (
     <li
       className="menu-items"
-      ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onClick={closeDropdown}

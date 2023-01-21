@@ -1,0 +1,159 @@
+@import '../../colors.scss';
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 20px;
+    padding-bottom: 4rem;
+    border-radius: 40px;
+    background-color: $blue-80;
+	min-height: 1100px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .input {
+        padding: 5px 15px;
+        width: 30%;
+        transition: width 0.4s ease-in-out;
+        border: none;
+        border-bottom: 2px solid $yellow;
+        background: transparent;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 9px 4px 9px 45px;
+        background-image: url("https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/600/FAB005/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+
+        &:focus {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid $yellow;
+            outline: none;
+        }
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $yellow;
+            opacity: 1;
+            /* Firefox */
+        }
+    }
+
+    .positive-things-list {
+        width: 65%;
+        margin: auto;
+        padding-top: 20px;
+
+        .search-result {
+            display: flex;
+
+            h2 {
+                text-align: center;
+
+                .add-button {
+                    padding: 12px;
+                    border-radius: 20px;
+                    margin-left: 7px;
+                    background: linear-gradient($blue-80, $blue-80) padding-box,
+                        linear-gradient(to right, darkblue, darkorchid) border-box;
+                    border: 4px solid transparent;
+                    text-transform: uppercase;
+                    font-weight: bolder;
+                    color: darkorchid;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: linear-gradient($blue-80, $blue-80) padding-box,
+                            linear-gradient(to left, darkblue, darkorchid) border-box;
+                    }
+                }
+            }
+
+            .small-text {
+                font-size: 10px;
+            }
+        }
+
+        .positive-thing {
+            list-style: none;
+            margin: 10px 0;
+            padding: 10px;
+            background: $blue-70;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            width: auto;
+            height: auto;
+
+            .reason {
+                cursor: pointer;
+                word-break: break-all;
+                width: 90%;
+                word-wrap: break-word;
+                font-size: 26px;
+                text-align: center;
+                margin: auto;
+                color: $blue-90;
+                border: none;
+                background: transparent;
+
+                &:focus-visible {
+                    border: none;
+                }
+            }
+        }
+
+        .btn-delete {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            border: 2px solid $blue-90;
+            background-color: $white;
+            cursor: pointer;
+            box-shadow: 0 0 10px #333;
+            overflow: hidden;
+            transition: .3s;
+
+            svg {
+                color: $blue-90;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: .3s;
+            }
+
+            &:hover {
+                background-color: $blue-10;
+                transform: scale(1.2);
+                box-shadow: 0 0 4px $black;
+                transition: .3s;
+            }
+
+            &:focus svg {
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+    }
+
+	@media screen and (max-width: 800px) {
+		.input {
+			width: 100%;
+		}
+
+		.positive-things-list {
+			width: 100%;
+			transition: .3s;
+
+			.positive-thing .reason {
+				font-size: 20px;
+			}
+		}
+	}
+}

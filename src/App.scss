@@ -15,10 +15,12 @@ body {
 
     .content {
       max-width: 1200px;
-      min-height: 80vh;
       margin: 0 auto;
-      padding: 3rem 20px;
-      padding-bottom: 4rem; 
+      padding: 1rem 0;
+
+      p {
+        font-weight: normal;
+      }
     }
   }
 }

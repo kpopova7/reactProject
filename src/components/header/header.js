@@ -1,7 +1,7 @@
-import Navbar from '../navbar/navbar';
+import Navbar from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import alienLogo from '../../img/alien-logo.png';
-import './header.scss';
+import './Header.scss';
 
 
 const Header = () => {
